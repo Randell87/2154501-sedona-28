@@ -1,0 +1,51 @@
+.developer {
+  height: 35px;
+  box-sizing: border-box;
+  display: flex;
+  width: fit-content;
+}
+
+.developer__link {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+  padding: 7px 40px 7px 0;
+  background-color: #ffffff;
+  position: relative;
+  width: fit-content;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 28px;
+    height: 35px;
+    background-color: #000000;
+    color: #ffffff;
+    mask-image: url("../../img/htmlacademy.svg");
+    mask-position: top -1px right -5px;
+    mask-repeat: no-repeat;
+    mask-size: 135%;
+  }
+
+  &:hover {
+    color: @footer-text-hover;
+
+    &::after {
+      background-color: @footer-text-hover;
+    }
+  }
+
+  &:active {
+    color: rgba(179, 179, 179, 1);
+
+    &::after {
+      background-color: rgba(179, 179, 179, 1);
+    }
+  }
+}

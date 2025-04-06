@@ -1,0 +1,14 @@
+.container {
+  width: @mobile;
+  margin: 0 auto;
+
+  @media (min-width: @tablet) {
+    width: @tablet;
+  }
+
+  @media (min-width: @desktop) {
+    width: @desktop;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}

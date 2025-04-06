@@ -1,0 +1,25 @@
+.page__body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+
+  @media (min-width: @desktop) {
+    background-color: #f2f2f2;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: fixed;
+      left: 50%;
+      transform: translate(-50%);
+      width: @desktop;
+      height: 100%;
+      box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
+      z-index: -2;
+    }
+  }
+}

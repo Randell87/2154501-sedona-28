@@ -1,0 +1,70 @@
+.fieldset-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 144%;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 21px;
+  overflow-wrap: break-word;
+
+  @media (min-width: @tablet) {
+    box-sizing: border-box;
+    margin-bottom: 28px;
+    font-size: 21px;
+    line-height: 124%;
+    padding: 0 5px;
+    max-width: 295px;
+  }
+
+  @media (min-width: @desktop) {
+    margin-bottom: 27px;
+    padding: 0 20px;
+    max-width: 430px;
+  }
+
+  &--with-line {
+    @media (min-width: @tablet) {
+      position: relative;
+      padding: 0 123px;
+      max-width: 1200px;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%);
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(0, -50%);
+        width: 123px;
+        height: 1px;
+        background-color: #dbdbdb;
+      }
+    }
+
+    @media (min-width: @desktop) {
+      max-width: 1200px;
+      padding: 0 281px;
+
+      &::before {
+        width: 280px;
+      }
+
+      &::after {
+        width: 280px;
+      }
+    }
+  }
+}

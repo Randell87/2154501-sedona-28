@@ -1,0 +1,19 @@
+.map {
+  width: 320px;
+  height: 350px;
+  border: none;
+
+  @media (min-width: @tablet) {
+    width: 768px;
+  }
+
+  @media (min-width: @desktop) {
+    width: 1200px;
+  }
+}
+
+.nojs {
+  & .map {
+    display: none;
+  }
+}

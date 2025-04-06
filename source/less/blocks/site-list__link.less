@@ -1,0 +1,39 @@
+.site-list__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: @text-white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 17px 0 12px;
+  font-family: "PT Sans", sans-serif;
+
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: @tablet) {
+    padding: 18px 15px 17px;
+    font-size: 14px;
+    line-height: 150%;
+    color: #000000;
+
+    &:hover {
+      color: #81b3d2;
+    }
+
+    &:focus {
+      outline: none;
+      color: #81b3d2;
+    }
+
+    &--active {
+      color: #766357;
+    }
+  }
+}

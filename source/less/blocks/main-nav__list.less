@@ -1,0 +1,28 @@
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: @main-color;
+  position: relative;
+  z-index: 1;
+  display: none;
+  width: 100%;
+
+  &--open {
+    display: block;
+    position: absolute;
+  }
+
+  @media (min-width: @tablet) {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 153px);
+    background-color: #ffffff;
+    z-index: 0;
+    row-gap: 25px;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: repeat(5, 240px);
+  }
+}

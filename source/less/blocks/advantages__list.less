@@ -1,0 +1,14 @@
+.advantages__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: repeat(3, 400px);
+  }
+}

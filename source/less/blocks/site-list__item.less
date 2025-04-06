@@ -1,0 +1,43 @@
+.site-list__item {
+  background-color: @main-color;
+  width: 100%;
+  mix-blend-mode: normal;
+  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+
+  @media (max-width: @tablet) {
+    &:hover {
+      background-color: @main-color-hover;
+    }
+
+    &:active {
+      background-color: @main-color-down;
+
+      & > .site-list__link {
+        color: rgba(255, 255, 255, 0.3);
+      }
+    }
+
+    &:focus-within {
+      background-color: @main-color-hover;
+
+      & > .site-list__link {
+        outline: none;
+      }
+    }
+  }
+
+  @media (min-width: @tablet) {
+    background-color: #ffffff;
+    box-shadow: none;
+
+    &:nth-child(3) {
+      grid-column: 4/5;
+    }
+  }
+}
+
+.site-list__item:nth-child(4n+7) {
+  @media (min-width: @tablet) {
+    margin: 0 0 0 100%;
+  }
+}

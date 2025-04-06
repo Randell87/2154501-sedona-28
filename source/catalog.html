@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="img/favicon/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body nojs">
+    <header class="main-header container">
+      <a class="main-header__logo logo" href="#" aria-current="page">
+        <img class="logo__img" width="185" height="96" src="img/logo.svg" alt="Логотип Sedona.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active" href="catalog.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">
+                Форма Отзыва
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="https://htmlacademy.ru">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+
+      </nav>
+    </header>
+
+    <main class="main-container main container">
+      <section class="main__hero hero">
+        <h1 class="visually-hidden">Галерея фотографий Седоны</h1>
+        <img class="hero-img hero-img--not-index" src="img/hero-text.svg" width="229" height="39" alt="Добро пожаловать в Седону">
+      </section>
+
+      <section class="gallery">
+        <div class="gallery__text gallery-text width-limit">
+          <h2 class="gallery-text__title main-title">Фото и видео</h2>
+          <p class="gallery-text__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+
+        <ul class="gallery__list gallery-list">
+          <li class="gallery-list__item gallery-item gallery-item--big-post">
+            <a class="gallery-item__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/media/desktop/photo-1-desktop.webp 1x, img/media/desktop/photo-1-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1200px)" srcset="img/media/desktop/photo-1-desktop.jpg 1x, img/media/desktop/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/media/tablet/photo-1-tablet.webp 1x, img/media/tablet/photo-1-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/media/tablet/photo-1-tablet.jpg 1x, img/media/tablet/photo-1-tablet@2x.jpg 2x">
+                <source srcset="img/media/mobile/photo-1-mobile.webp 1x, img/media/mobile/photo-1-mobile@2x.webp 2x" type="image/webp">
+                <img class="gallery-item__photo gallery-item__photo--big-photo" src="img/media/mobile/photo-1-mobile.jpg" srcset="img/media/mobile/photo-1-mobile@2x.jpg 2x" alt="Дорога на закате.">
+              </picture>
+
+            </a>
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__text-wrapper">
+                <h3 class="gallery-item__title">неродные просторы</h3>
+                <p class="gallery-item__author">Автор фото: Борис</p>
+              </div>
+              <div class="gallery-item__likes-count likes-count">
+                <p class="likes-count__count">1350<span class="visually-hidden">лайков</span></p>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery-list__item gallery-item gallery-item--small-post">
+            <a class="gallery-item__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/media/desktop/photo-2-desktop.webp 1x, img/media/desktop/photo-2-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1200px)" srcset="img/media/desktop/photo-2-desktop.jpg 1x, img/media/desktop/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/media/tablet/photo-2-tablet.webp 1x, img/media/tablet/photo-2-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/media/tablet/photo-2-tablet.jpg 1x, img/media/tablet/photo-2-tablet@2x.jpg 2x">
+                <source srcset="img/media/mobile/photo-2-mobile.webp 1x, img/media/mobile/photo-2-mobile@2x.webp 2x" type="image/webp">
+                <img class="gallery-item__photo" src="img/media/mobile/photo-2-mobile.jpg" srcset="img/media/mobile/photo-2-mobile.jpg 2x" alt="Растение с желтыми и зелеными цветочками.">
+              </picture>
+            </a>
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__text-wrapper">
+                <h3 class="gallery-item__title">Местная растительность</h3>
+                <p class="gallery-item__author">Автор фото: Сергей</p>
+              </div>
+              <div class="gallery-item__likes-count likes-count">
+                <p class="likes-count__count">143<span class="visually-hidden">лайков</span></p>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery-list__item gallery-item gallery-item--small-post">
+            <a class="gallery-item__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/media/desktop/photo-3-desktop.webp 1x, img/media/desktop/photo-3-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1200px)" srcset="img/media/desktop/photo-3-desktop.jpg 1x, img/media/desktop/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/media/tablet/photo-3-tablet.webp 1x, img/media/tablet/photo-3-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/media/tablet/photo-3-tablet.jpg 1x, img/media/tablet/photo-3-tablet@2x.jpg 2x">
+                <source srcset="img/media/mobile/photo-3-mobile.webp 1x, img/media/mobile/photo-3-mobile@2x.webp 2x" type="image/webp">
+                <img class="gallery-item__photo" src="img/media/mobile/photo-3-mobile.jpg" srcset="img/media/mobile/photo-3-mobile.jpg 2x" alt="Серпантин в гуще растений.">
+              </picture>
+            </a>
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__text-wrapper">
+                <h3 class="gallery-item__title">Дорога на север</h3>
+                <p class="gallery-item__author">Автор фото: Петр</p>
+              </div>
+              <div class="gallery-item__likes-count likes-count">
+                <p class="likes-count__count">96<span class="visually-hidden">лайков</span></p>
+              </div>
+            </div>
+          </li>
+
+          <li class="gallery-list__item gallery-item gallery-item--small-post">
+            <a class="gallery-item__link" href="#">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/media/desktop/photo-4-desktop.webp 1x, img/media/desktop/photo-4-desktop@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 1200px)" srcset="img/media/desktop/photo-4-desktop.jpg 1x, img/media/desktop/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/media/tablet/photo-4-tablet.webp 1x, img/media/tablet/photo-4-tablet@2x.webp 2x" type="image/webp">
+                <source media="(min-width: 768px)" srcset="img/media/tablet/photo-4-tablet.jpg 1x, img/media/tablet/photo-4-tablet@2x.jpg 2x">
+                <source srcset="img/media/mobile/photo-4-mobile.webp 1x, img/media/mobile/photo-4-mobile@2x.webp 2x" type="image/webp">
+                <img class="gallery-item__photo" src="img/media/mobile/photo-4-mobile.jpg" srcset="img/media/mobile/photo-4-mobile.jpg 2x" alt="Мост в пустыне.">
+              </picture>
+            </a>
+            <div class="gallery-item__wrapper">
+              <div class="gallery-item__text-wrapper">
+                <h3 class="gallery-item__title">Мост дьявола</h3>
+                <p class="gallery-item__author">Автор фото: Антон</p>
+              </div>
+              <div class="gallery-item__likes-count likes-count">
+                <p class="likes-count__count">254<span class="visually-hidden">лайков</span></p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="video-block">
+        <h2 class="visually-hidden">Видео</h2>
+        <div class="video-block__text-wrapper">
+          <h3 class="video-block__title">Все еще сомневаетесь?</h3>
+          <p class="video-block__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        </div>
+        <div class="video-block__video video">
+          <a class="video__link" href="https://www.youtube.com/watch?v=nmVEjx1DCqk" target="_blank">
+            <span class="visually-hidden">Видео</span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/media/video/video-desktop.webp 1x, img/media/video/video-desktop@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 1200px)" srcset="img/media/video/video-desktop.jpg 1x, img/media/video/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/media/video/video-tablet.webp 1x, img/media/video/video-tablet@2x.webp 2x" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/media/video/video-tablet.jpg 1x, img/media/video/video-tablet@2x.jpg 2x">
+              <source srcset="img/media/video/video-mobile.webp 1x, img/media/video/video-mobile@2x.webp 2x" type="image/webp">
+              <img class="video__img" src="img/media/video/video-mobile.jpg" srcset="img/media/video/video-mobile@2x.jpg 2x" alt="">
+            </picture>
+            <span class="video__play"></span>
+          </a>
+        </div>
+      </section>
+
+
+    </main>
+    <footer class="footer footer--index container">
+      <a class="footer__text" href="https://www.google.com/search?q=sedona&rlz=1C5CHFA_enTR1018TR1019&oq=vi&aqs=chrome.0.35i19i39j69i57j35i39j0i433i512l2j0i131i433i512j46i131i175i199i433i512j0i512l3.961j0j15&sourceid=chrome&ie=UTF-8" target="_blank">&#35;visitSEDONA</a>
+      <ul class="footer__social-list social-list">
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--vk" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Telegram</span>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+      <div class="footer__developer developer">
+        <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
+          Разработано
+          <span class="visually-hidden">html academy </span>
+        </a>
+      </div>
+    </footer>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

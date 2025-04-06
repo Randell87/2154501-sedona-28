@@ -1,0 +1,24 @@
+.advantages__wrapper {
+  padding: 54px 0 38px;
+
+  @media (min-width: @tablet) {
+    padding: 49px 33px 34px;
+  }
+
+  &--first {
+    @media (min-width: @tablet) {
+      background-color: @main-color;
+      grid-column: 1/2;
+    }
+  }
+
+  &--second {
+    padding-top: 35px;
+
+    @media (min-width: @tablet) {
+      background-color: @main-color;
+      grid-column: 3/4;
+      padding-top: 50px;
+    }
+  }
+}

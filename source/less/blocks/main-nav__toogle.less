@@ -1,0 +1,33 @@
+.main-nav__toggle {
+  border: none;
+  padding: 0;
+  display: block;
+  background-color: @main-color;
+  mask-image: url("../../img/open-menu.svg");
+  mask-repeat: no-repeat;
+
+  &:hover {
+    background-color: @main-color-hover;
+  }
+
+  &:active {
+    background-color: @main-color-down;
+  }
+
+  &--open {
+    background-color: #ffffff;
+    mask-image: url("../../img/close-menu.svg");
+  }
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+@media (max-width: @tablet) {
+  .nojs {
+    & .main-nav__toggle {
+      display: none;
+    }
+  }
+}

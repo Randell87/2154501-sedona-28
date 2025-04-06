@@ -1,0 +1,154 @@
+.gallery-item {
+  padding: 24px 0 26px;
+  background-color: #ffffff;
+  width: 280px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: #e5e5e5;
+    z-index: 1;
+    display: block;
+  }
+
+  &:last-child {
+    &::before {
+      content: "";
+      position: absolute;
+      width: 320px;
+      height: 1px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+      background-color: #e5e5e5;
+      z-index: 1;
+      display: block;
+    }
+  }
+
+  @media (min-width: @tablet) {
+    width: 324px;
+    padding: 0;
+
+    &--big-post {
+      width: 100%;
+      grid-column: 1/-1;
+      grid-row: 1/3;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    &:last-child {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  @media (min-width: @desktop) {
+    position: relative;
+    width: 400px;
+
+    &--big-post {
+      width: 100%;
+      grid-column: 1/-1;
+      grid-row: 1/2;
+
+      & .gallery-item__wrapper {
+        padding: 22px 21px 19px;
+      }
+    }
+
+    &--small-post {
+      & .gallery-item__title {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+.gallery-item__photo {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+
+  @media (min-width: @tablet) {
+    margin-bottom: 0;
+
+    &--big-photo {
+      width: 100%;
+      height: 400px;
+    }
+  }
+}
+
+.gallery-item__wrapper {
+  @media (min-width: @tablet) {
+    background-color: #f2f2f2;
+    padding: 22px 20px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop) {
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 17px 20px 17px 25px;
+  }
+}
+
+.gallery-item__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+  margin: 0;
+  color: #000000;
+  margin-bottom: 1px;
+
+  @media (min-width: @tablet) {
+    font-size: 14px;
+    line-height: 150%;
+    padding: 0 20px 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    color: #ffffff;
+  }
+}
+
+.gallery-item__author {
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0;
+  color: #333333;
+
+  @media (min-width: @tablet) {
+    padding: 0 20px 0 0;
+  }
+
+  @media (min-width: @desktop) {
+    color: #ffffff;
+  }
+}
+
+.gallery-item__likes-count {
+  margin-top: 11px;
+
+  @media (min-width: @tablet) {
+    margin: 0;
+  }
+}

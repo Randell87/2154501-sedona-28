@@ -1,0 +1,19 @@
+.advantages__features {
+  background-color: #ffffff;
+  color: #000000;
+  list-style-type: none;
+  margin: 0;
+  padding: 22px 0 46px;
+
+  @media (min-width: @tablet) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+    padding: 0;
+  }
+
+  @media (min-width: @desktop) {
+    grid-template-columns: repeat(3, 400px);
+  }
+}

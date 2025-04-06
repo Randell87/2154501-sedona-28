@@ -1,0 +1,29 @@
+.button {
+  display: block;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 124%;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 16px 49px;
+  text-align: center;
+  background-color: @main-color;
+  margin: 0;
+  border: none;
+
+  &:hover {
+    background-color: @main-color-hover;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: @main-color-down;
+  }
+
+  &:disabled {
+    color: #ffffff;
+    background-color: #e5e5e5;
+  }
+}

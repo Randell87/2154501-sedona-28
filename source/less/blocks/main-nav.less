@@ -1,0 +1,33 @@
+.main-nav {
+  background-color: #ffffff;
+  position: relative;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  width: 23px;
+  height: 22px;
+  z-index: 2;
+
+  @media (min-width: @tablet) {
+    display: none;
+  }
+}
+
+@media (max-width: @tablet) {
+  .nojs {
+    & .main-nav {
+      position: static;
+      margin-top: 110px;
+    }
+
+    & .main-nav__list {
+      display: block;
+      position: static;
+      width: 100%;
+      /*z-index: 3;*/
+    }
+  }
+}

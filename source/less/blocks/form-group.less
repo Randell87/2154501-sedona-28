@@ -1,0 +1,18 @@
+.form-group {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 16px;
+  align-items: center;
+
+  &--radio {
+    @media (min-width: @desktop) {
+      gap: 18px;
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .fieldset__wrapper--checkbox .form-group:not(:last-child) {
+    margin-right: 64px;
+  }
+}

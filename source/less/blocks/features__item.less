@@ -1,0 +1,40 @@
+.features__item {
+  padding: 10px 0 0 47px;
+  background-position: top left;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  background-color: #ffffff;
+  color: #000000;
+
+  &--house {
+    background-image: url("../../img/house.svg");
+  }
+
+  &--food {
+    background-image: url("../../img/food.svg");
+  }
+
+  &--souvenirs {
+    background-image: url("../../img/souvenirs.svg");
+  }
+
+  &:nth-child(2) {
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 155px 33px 62px;
+    background-size: 80px 80px;
+    background-position: center 57px, center;
+
+    &:nth-child(2) {
+      margin: 0;
+    }
+  }
+
+  @media (min-width: @desktop) {
+    padding: 166px 33px 71px;
+    background-position: center 65px, center;
+  }
+}

@@ -1,0 +1,40 @@
+.likes-count {
+  padding: 5px 0 0 37px;
+  width: fit-content;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 23px;
+    height: 21px;
+    background-color: rgba(0, 0, 0, 0.3);
+    mask-image: url("../../img/like.svg");
+    mask-repeat: no-repeat;
+  }
+
+  @media (min-width: @tablet) {
+    padding: 2px 0 0 32px;
+  }
+
+  @media (min-width: @desktop) {
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.likes-count__count {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 150%;
+  color: #000000;
+  margin: 0;
+  width: fit-content;
+
+  @media (min-width: @desktop) {
+    color: #ffffff;
+  }
+}
